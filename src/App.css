@@ -1,0 +1,148 @@
+/* General body styles */
+body {
+  margin: 4em;
+  padding: 0;
+  color: #242e42;
+  background-color: #f0f1f6;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; /* Updated font family */
+  font-size: 15px;
+}
+
+/* Header styles */
+h1 {
+  color: #424656;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif; /* Updated font family for headings */
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+  display: grid;
+  width: 80vw;
+  height: 50vh;
+  grid-template-rows: 0.75fr 5fr 2fr;
+  grid-gap: 10px;
+  margin: auto;
+}
+
+/* Dashboard container children styles */
+.dashboard-container > * {
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+}
+
+/* Dashboard menu styles */
+.dashboard-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.dashboard-menu > .dashboard-select {
+  width: 30%;
+  margin-left: 1rem;
+}
+
+.dashboard-menu > .update-date {
+  margin-right: 2in;
+}
+
+/* Chart styles */
+.line-chart {
+  height: 80%;
+}
+
+/* Summary dashboard styles */
+.dashboard-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Summary card styles */
+.summary-card {
+  flex: 1 0 calc(25% - 10px);
+  margin: 5px;
+  color: white;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Summary card hover effect */
+.summary-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.summary-card h2 {
+  font-size: 2em;
+  padding-top: 5%;
+  animation: fade 2s linear;
+  font-family: 'Montserrat', sans-serif; /* Consistent font for card titles */
+}
+
+.summary-card p {
+  font-size: clamp(1rem, 1.2vw + 1rem, 1.5rem); /* Responsive font size */
+  line-height: 1.5; /* Improve readability with line height */
+  margin: 0; /* Remove default margin for better spacing */
+}
+
+/* Individual card background colors */
+.summary-card:nth-child(1) {
+  background-color: #8e2e46;
+}
+
+.summary-card:nth-child(2) {
+  background-color: #1f5673;
+}
+
+.summary-card:nth-child(3) {
+  background-color: #687987;
+}
+
+.summary-card:nth-child(4) {
+  background-color: #2a8479;
+}
+
+/* Icon styles */
+.card-icon {
+  margin-right: 8px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  transition: color 0.3s; /* Smooth transition for icon color */
+}
+
+/* Icon hover effect */
+.summary-card.card-icon:hover {
+  color: #ff6347; /* Change icon color on hover */
+}
+
+/* Dashboard chart styles */
+.dashboard-chart {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the children */
+  padding-top: 1em;
+}
+
+.chart-content {
+  flex: 1; /* Each column takes equal space */
+  padding: 10px; /* Optional: Add some padding */
+}
+
+/* Review section styles */
+.dashboard-review {
+  font-family: 'Verdana, sans-serif';
+  text-align: justify;
+  padding: 0 5em 2em;
+}
+
+/* Keyframes for animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

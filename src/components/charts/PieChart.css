@@ -1,0 +1,7 @@
+/* PieChart.css */
+.pie-chart-container {
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Optional: set a max width */
+    margin: 0 auto; /* Center the chart */
+  }
+  
